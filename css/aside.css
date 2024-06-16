@@ -1,0 +1,36 @@
+aside {    
+    background-color: #6236FF; 
+    padding: 10px;  
+    padding-left: 0;      
+}
+
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+}
+
+
+.nav-list {
+    margin-top: 170px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    font-size: 17px;
+    padding: 50px;
+    text-decoration: none;
+    color: #B39EFF;
+    
+}
+
+.active {
+    color: white;
+}
+
+/* .nav-icons {
+    width: 40px;
+} */
