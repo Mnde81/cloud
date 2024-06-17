@@ -17,13 +17,16 @@ aside {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .link {
     font-size: 17px;
-    padding: 50px;
+    padding: 10px;
     text-decoration: none;
     color: #B39EFF;
+    margin-bottom: 60px;
+    margin-left: 35px;
     
 }
 
@@ -31,6 +34,8 @@ aside {
     color: white;
 }
 
-/* .nav-icons {
-    width: 40px;
-} */
+.nav-icons {
+    width: 30px;
+    margin-left: 60px;
+
+}
