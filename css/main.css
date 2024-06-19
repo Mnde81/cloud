@@ -13,5 +13,70 @@ body {
 
 
 main { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header header header"
+    "add-new-folder images media-files documents other-files upgrade-plan"
+    "storage storage storage storage storage recent-files";
+    align-items: start;
+    align-content: start;
+    gap: 20px;
+    padding: 20px 30px;
     background-color: #FAFAFA;        
+}
+
+.add-new-folder {
+    grid-area: add-new-folder;
+    border: 1px solid red;
+}
+
+.images {
+    grid-area: images;
+    border: 1px solid red;
+}
+
+.media-files {
+    grid-area: media-files;
+    border: 1px solid red;
+}
+
+.documents {
+    grid-area: documents;
+    border: 1px solid red;
+}
+
+.other-files {
+    grid-area: other-files;
+    border: 1px solid red;
+}
+
+.upgrade-plan {
+    grid-area: upgrade-plan;
+    border: 1px solid red;
+}
+
+.storage {
+    grid-area: storage;
+    border: 1px solid red;
+}
+
+.recent-files {
+    grid-area: recent-files;
+    border: 1px solid red;
+}
+
+.block2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.block4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.block5 {
+    display: grid;
+    grid-template-columns: auto auto;
 }
