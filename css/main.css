@@ -14,7 +14,7 @@ body {
 
 main { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 400px;
     grid-template-areas:
     "header header header header header header"
     "add-new-folder images media-files documents other-files upgrade-plan"
@@ -28,32 +28,39 @@ main {
 
 .add-new-folder {
     grid-area: add-new-folder;
-    border: 1px solid red;
+    
 }
 
 .images {
-    grid-area: images;
-    border: 1px solid red;
+    grid-area: images;    
+    position: relative;
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
+   
 }
 
 .media-files {
-    grid-area: media-files;
-    border: 1px solid red;
+    grid-area: media-files;    
+    position: relative;
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
 }
 
 .documents {
-    grid-area: documents;
-    border: 1px solid red;
+    grid-area: documents;    
+    position: relative;
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
 }
 
 .other-files {
-    grid-area: other-files;
-    border: 1px solid red;
+    grid-area: other-files;    
+    position: relative;
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
 }
 
 .upgrade-plan {
     grid-area: upgrade-plan;
-    border: 1px solid red;
+    position: relative;
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
+    
 }
 
 .storage {
@@ -66,9 +73,35 @@ main {
     border: 1px solid red;
 }
 
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #FAFAFA;
+    border-radius: 20px;
+    border: 2px solid #DEDEE9;
+    color: #8989BF;
+
+}
+
 .block2 {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;    
+    
+}
+
+.block3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD06E;
+    border-radius: 20px;
+    padding: 30px;
 }
 
 .block4 {
@@ -79,4 +112,111 @@ main {
 .block5 {
     display: grid;
     grid-template-columns: auto auto;
+}
+
+.block1 > a {
+    text-decoration: none;
+}
+
+.plus {
+    margin-top: 53px;
+    font-size: 30px;
+}
+
+.add {
+    margin-bottom: 53px;
+    font-size: 15px;
+}
+
+.link1 {
+    text-decoration: none;
+}
+
+.fa-ellipsis-v {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.title {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.block2-icons {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+ 
+}
+
+.progress-bar .progress {
+    --h: 8px;
+    height: var(--h);
+    width: 100%;
+    background-color: #EDEDF5;
+    border-radius: var(--h);
+}
+
+.progress-bar .bar-1 {
+    width: 40%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #FF6C40;   
+}
+
+.progress-bar .bar-2 {
+    width: 40%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #FFCE00;   
+}
+
+.progress-bar .bar-3 {
+    width: 40%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #74CCFF;   
+}
+
+.progress-bar .bar-4 {
+    width: 40%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #8A00FF;   
+}
+
+.gb {
+    margin-top: 20px;
+}
+
+.plan-to-pro {
+    color: #B94101;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.cost {
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.block3 > a {
+    text-decoration: none;
+}
+
+.upgrade-pic {
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
