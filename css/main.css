@@ -4,8 +4,7 @@
 
 body {    
     display: grid;
-    grid-template-columns: 150px 1fr;    
-    
+    grid-template-columns: 150px 1fr;        
     margin: 0;
     min-height: 100vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   
@@ -64,13 +63,13 @@ main {
 }
 
 .storage {
-    grid-area: storage;
-    border: 1px solid red;
+    grid-area: storage;    
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
 }
 
 .recent-files {
-    grid-area: recent-files;
-    border: 1px solid red;
+    grid-area: recent-files;    
+    box-shadow: 10px 20px 30px 10px rgba(232, 232, 238, 1.0);
 }
 
 .block1 {
@@ -84,7 +83,6 @@ main {
     border-radius: 20px;
     border: 2px solid #DEDEE9;
     color: #8989BF;
-
 }
 
 .block2 {
@@ -104,14 +102,25 @@ main {
     padding: 30px;
 }
 
-.block4 {
-    display: grid;
-    grid-template-columns: auto auto auto;
+.block4 {    
+    display: flex;  
+    justify-content: space-between;
+    align-items: start;
+    height: 370px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
 }
 
 .block5 {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    
 }
 
 .block1 > a {
@@ -148,8 +157,6 @@ main {
     top: 15px;
     left: 15px;
 }
-
-
 
 .progress-bar {
     display: flex;
@@ -219,4 +226,53 @@ main {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+.block4 > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+.chart {
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+    width: 600px;
+}
+
+.link2 {
+    text-decoration: none;
+}
+
+.block5 > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.recent-div {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: start; */
+}
+
+.recent-div > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.recent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+    font-size: 14px;
+}
+
+.recent-list-1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
