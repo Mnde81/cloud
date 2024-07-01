@@ -244,6 +244,7 @@ main {
 
 .link2 {
     text-decoration: none;
+    color: #394368;
 }
 
 .block5 > p {
@@ -269,6 +270,7 @@ main {
     flex-direction: column;
     gap: 10px;    
     font-size: 14px;
+    color: #394368;
 }
 
 .recent-list-1 {
