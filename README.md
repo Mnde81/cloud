@@ -15,6 +15,7 @@ Design: [Cloud](https://dribbble.com/shots/7283658-Cloud-Storage/attachments/228
 ## 🎯 Project features/goals
 
 -   Github pages
+-   icons (FontAwesome)
 -   CSS files
 -   CSS flex
 -   CSS grid
