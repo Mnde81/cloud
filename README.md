@@ -15,12 +15,10 @@ Design: [Cloud](https://dribbble.com/shots/7283658-Cloud-Storage/attachments/228
 ## 🎯 Project features/goals
 
 -   Github pages
--   icons (FontAwesome, ReactIcons)
 -   CSS files
 -   CSS flex
 -   CSS grid
--   SVG images
--   **NO** responsive design
+-   Responsive design
 
 ## 🧰 Getting Started
 
